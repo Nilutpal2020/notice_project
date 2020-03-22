@@ -1,0 +1,31 @@
+<%- include("partials/header") %>
+
+    <div class="container">
+        <header class="jumbotron text-center">
+            <div class="container">
+                <h1 class="display-3">NOTICES!!!</h1>
+                <p>View the latest notices that has been posted till-date.</p>
+                <hr class="mr-4">
+                <a class="btn btn-primary btn-lg" href="/notices/new">Add New Notice</a>
+            </div>
+        </header>
+
+        <section id="gallery">
+            <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+                <% notices.forEach((notes) =>{ %>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <h3 class="card-title">
+                                <%= notes.name %>
+                            </h3>
+                            <p class="lead">
+                                <%= notes.description %>
+                            </p>
+                        </div>
+                    </div>
+                    <% }); %>
+            </div>
+        </section>
+    </div>
+
+    <%- include("partials/footer") %>

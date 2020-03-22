@@ -1,0 +1,24 @@
+<%- include("partials/header") %>
+
+    <div class="container text-center">
+
+        <h1 class="display-4">Create New Notice</h1> <br>
+        <!-- <div style="width: 30%; margin: 0 auto"> -->
+        <div class="jumbotron text-center">
+            <form action="/notices" method="post">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="name" placeholder="Enter Notice Heading">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="description" placeholder="Enter description" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-lg btn-block">Submit</button>
+                </div>
+            </form>
+        </div> <br>
+        <a href="/notices">Go back</a>
+
+    </div>
+
+    <%- include("partials/footer") %>
