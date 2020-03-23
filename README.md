@@ -5,9 +5,18 @@ In order to run the code on your machine follow the steps listed below:
 1. Install nodejs (https://nodejs.org/en/)
 2. Install git for terminal interface (https://git-scm.com/)
 3. Install VS code (if you don't have a good editor) (https://code.visualstudio.com/)
-4. After everything is setup, clone and download the code into your PC
+4. After everything is setup, clone and download the code into your PC.
+	4.1 Create a new folder and name it according to your choice for the project.
+	4.2 Navigate to that folder using your git command line.
+	4.3 Type this commands- 
+		a) git config --global user.name "*your github account name".
+		b) git config --global user.email "*email-id". 
+		c) Now to clone the code from our github repository type = 
+			git clone https://github.com/Nilutpal2020/notice_project.git  and press Enter.
+		This will clone or download the things from our Github Respository. After cloning you should be able to see a new folder inside your current folder named as "notice_project".
+ 
 5. (optional step) Type "npm init" on the git terminal and set a name if you want and others just press enter and at last type 'yes'. This will create the package.json file if it is not already created on your machine.
-6. Go to the folder and open the git terminal and run these commands:
+6. Go to the folder (notice_project) and open the git terminal and run these commands:
   5.1. npm install express --save (or npm -i express -s)
   5.2. npm install ejs --save
   5.3. npm install body-parser --save
